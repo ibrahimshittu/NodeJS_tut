@@ -6,7 +6,7 @@ const path = require('path')
 
 const logEvents = async (message) => {
     const dateTime = `${format(new Date(), 'yyyy-MM-dd')}` 
-    const logItem = `${dateTime}\t${uuid()}\t${message}\n}`
+    const logItem = `${dateTime}\t${uuid()}\t${message}\n`
     console.log(logItem)
 
     try {
@@ -19,7 +19,14 @@ const logEvents = async (message) => {
     }
 }
 
-module.exports = logEvents;
+
+const logger = (req, res, next) => {
+    logEvents(`${req.method}\t${req.header.methods}\t${req.url}`, 'reqLog.txt')
+    console.log(`${req.method} ${req.path}`);
+    next()
+}
+
+module.exports = {logEvents, logger};
 
 
 // console.log(format(new Date(), 'yyyy-MM-dd'));

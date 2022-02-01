@@ -1,0 +1,5 @@
+2022-02-01	390a2131-25fe-4b4e-8109-bf76cf1108f5	GET	undefined	/index.html
+}2022-02-01	cfc0fde8-ee11-4064-bcdc-05729b62f468	GET	undefined	/css/style.css
+}2022-02-01	bddd9ae2-7205-4d5b-9de0-302144dc0ed5	GET	undefined	/favicon.ico
+}2022-02-01	c599934b-adb7-43f5-b365-ba4ad0f0a29b	GET	undefined	/404.html
+}
