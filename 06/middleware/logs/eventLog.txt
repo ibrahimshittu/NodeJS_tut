@@ -2,4 +2,12 @@
 }2022-02-01	cfc0fde8-ee11-4064-bcdc-05729b62f468	GET	undefined	/css/style.css
 }2022-02-01	bddd9ae2-7205-4d5b-9de0-302144dc0ed5	GET	undefined	/favicon.ico
 }2022-02-01	c599934b-adb7-43f5-b365-ba4ad0f0a29b	GET	undefined	/404.html
-}
+}2022-02-01	f77e8ea6-da76-4c3c-af25-9c4b28ebf1e6	GET	undefined	/index.html
+2022-02-01	625a7e1b-cdb6-4fd8-8f1c-cdd01d08d2a8	GET	undefined	/css/style.css
+2022-02-01	e1b7529e-a78d-4174-9f96-c70aacf24682	GET	undefined	/index.html
+2022-02-01	b8404c6b-a7ef-498b-95c9-848b555bccf7	GET	undefined	/css/style.css
+2022-02-01	09011ae3-8f55-4225-bb78-c4d18cebd6b2	GET	undefined	/favicon.ico
+2022-02-01	75a514b1-1c96-41a0-9f02-fc3f4df0e3ad	GET	undefined	/404.html
+2022-02-01	a24286bd-b919-41b6-9d89-f3f0948d3cc2	GET	undefined	/index.html
+2022-02-01	b1e6ec33-718d-41ca-bd26-e1a88c257cdd	Error: Not allowed by CORS
+

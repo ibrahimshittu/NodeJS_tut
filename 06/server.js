@@ -3,6 +3,7 @@ const app = express()
 const path = require('path')
 const cors = require('cors')
 const {logger}  = require('./middleware/logEvents')
+const errorHandler  = require('./middleware/errorHandler')
 
 app.use(logger)
 
@@ -61,9 +62,18 @@ const two = (req, res) => {
 
 app.get('/chain', [one, two])
 
-app.get('/*', (req, res)=>{
-    res.status(404).redirect(301, '404.html')
-})
+app.all('*', (req, res) => {
+    res.status(404);
+    if (req.accepts('html')) {
+        res.sendFile(path.join(__dirname, 'views', '404.html'));
+    } else if (req.accepts('json')) {
+        res.json({ "error": "404 Not Found" });
+    } else {
+        res.type('txt').send("404 Not Found");
+    }
+});
+
+app.use(errorHandler)
 
 const PORT = process.env.PORT || 3500;
 app.listen(PORT, ()=> console.log(`server running on ${PORT}`))
