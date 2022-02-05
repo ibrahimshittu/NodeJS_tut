@@ -12,9 +12,9 @@ const handleNewuser = async (req, res) => {
     if (!username || !password) return res.status(400).json({'message': ' User or Password required'})
 
     // find duplicates
-    const duplicate = usersDB.users.find(person => {
+    const duplicate = usersDB.users.find(person => 
         person.username === username
-    })
+    )
 
     if (duplicate) return res.status(409).json({'message': 'user already exists'})
     try {
