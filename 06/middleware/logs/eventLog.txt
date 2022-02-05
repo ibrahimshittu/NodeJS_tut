@@ -11,3 +11,12 @@
 2022-02-01	a24286bd-b919-41b6-9d89-f3f0948d3cc2	GET	undefined	/index.html
 2022-02-01	b1e6ec33-718d-41ca-bd26-e1a88c257cdd	Error: Not allowed by CORS
 
+2022-02-04	23b41fe2-c0d5-4f88-88c2-45c39957cb02	GET	undefined	/
+2022-02-04	eba5c6e6-7470-48bc-bfda-1368733c9c14	GET	undefined	/css/style.css
+2022-02-04	1061e593-c82b-4224-8007-df1b13e0b740	GET	undefined	/favicon.ico
+2022-02-04	9687ba68-2507-41ad-be5d-cdf0405f92e9	GET	undefined	/subdir
+2022-02-04	08252318-22e1-45a9-bd00-c1608096444f	GET	undefined	/subdir/test
+2022-02-04	0c15841f-724f-4154-b065-c8744ddb0d5b	GET	undefined	/subdir/testl
+2022-02-05	86ef4aca-e199-49db-bbef-abdb92b9b421	GET	undefined	/
+2022-02-05	d7d876fb-7b2f-4b94-8a9e-d562934d2132	GET	undefined	/css/style.css
+2022-02-05	ddaf8f2c-8aae-4988-a67d-d8a1c2f06117	GET	undefined	/favicon.ico
