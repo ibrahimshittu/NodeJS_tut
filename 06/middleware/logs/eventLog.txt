@@ -20,3 +20,4 @@
 2022-02-05	86ef4aca-e199-49db-bbef-abdb92b9b421	GET	undefined	/
 2022-02-05	d7d876fb-7b2f-4b94-8a9e-d562934d2132	GET	undefined	/css/style.css
 2022-02-05	ddaf8f2c-8aae-4988-a67d-d8a1c2f06117	GET	undefined	/favicon.ico
+2022-02-05	da64e259-1f47-4d02-9f3e-dcdbd77ad3bc	GET	undefined	/employees
