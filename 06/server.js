@@ -12,7 +12,7 @@ app.use(logger)
 app.use(cors(corsOptions));
 
 // built-in middleware to handle urlencoded data
-// in other words, form data:  ‘content-type: application/x-www-form-urlencoded’
+// form data:  ‘content-type: application/x-www-form-urlencoded’
 app.use(express.urlencoded({ extended: false }));
 
 // built-in middleware for json 
