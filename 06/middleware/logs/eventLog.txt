@@ -22,3 +22,17 @@
 2022-02-05	ddaf8f2c-8aae-4988-a67d-d8a1c2f06117	GET	undefined	/favicon.ico
 2022-02-05	da64e259-1f47-4d02-9f3e-dcdbd77ad3bc	GET	undefined	/employees
 2022-02-05	629b8417-e2f3-498f-bc90-1de35655c493	GET	undefined	/employees
+2022-02-05	8994809a-aeb3-41a1-97e3-b14fdaff2e1e	GET	undefined	/register
+2022-02-05	95d9bccf-7784-4231-b11a-b32edbfac64b	GET	undefined	/register
+2022-02-05	f9a0d581-350c-46eb-8cdb-6d8409521a57	POST	undefined	/register
+2022-02-05	33d64038-3c4d-4237-a731-4cb16c1a78b8	POST	undefined	/register
+2022-02-05	288bbd62-9675-4b16-bab1-d685f40a5131	POST	undefined	/register
+2022-02-05	0727c2d6-4985-4666-95a9-8d009eac68f3	POST	undefined	/register
+2022-02-05	0bc58e9b-87a0-428e-900a-21e64e4d1f2c	POST	undefined	/register
+2022-02-05	b489c603-69da-4e41-81d0-d23b6cd8a016	POST	undefined	/register
+2022-02-05	1a5d7334-f005-4bd7-8740-b2a15a3bc264	POST	undefined	/register
+2022-02-05	ac8a36aa-b144-4ae7-8796-fe535a937d5e	POST	undefined	/register
+2022-02-05	63653c03-76c3-4877-8aa6-3aee06be8bcc	POST	undefined	/register
+2022-02-05	025f51ad-3ad6-4eb8-86d2-33d1b448d0f8	POST	undefined	/register
+2022-02-05	3c6931db-e8a5-4684-80fa-968ba2182654	POST	undefined	/register
+2022-02-05	d55d3f76-14ba-448e-a25a-ec5ec3abd611	POST	undefined	/register
