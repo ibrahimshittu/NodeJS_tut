@@ -21,7 +21,7 @@ const handleLogout =  async (req, res) => {
     )
 
     if (!findUser) { 
-    res.clearCookie('jwt', refreshToken, {httpOnly: true, maxAge: 24*60*60*1000})
+    res.clearCookie('jwt', refreshToken, {httpOnly: true, sameSite: 'None', secure: true})
     return res.status(204).json({'message': "no user found"})
     }
 
@@ -31,7 +31,7 @@ const handleLogout =  async (req, res) => {
     await fsPromises.writeFile(path.join(__dirname, '..', 'model', 'users.json'),
         JSON.stringify(usersDB.users))
     
-    res.clearCookie('jwt', refreshToken, {httpOnly: true, maxAge: 24*60*60*1000}) // secure: true for production
+    res.clearCookie('jwt', refreshToken, {httpOnly: true,sameSite: 'None', secure: true}) // secure: true for production
     res.status(204)
 }
 

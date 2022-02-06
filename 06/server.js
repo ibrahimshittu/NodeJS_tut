@@ -7,8 +7,12 @@ const corsOptions = require('./config/corsOptions')
 const {logger}  = require('./middleware/logEvents')
 const errorHandler  = require('./middleware/errorHandler')
 const verifyjwt  = require('./middleware/verifyjwt')
+const credentials  = require('./middleware/credentials')
 
 app.use(logger)
+
+// middle ware for Allow Origin, true
+app.use(credentials);
 
 // Cross Origin Resource Sharing
 app.use(cors(corsOptions));
