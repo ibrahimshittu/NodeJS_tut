@@ -72,3 +72,5 @@
 2022-02-06	24026606-3e07-4633-a3e3-b42f07e21051	ReferenceError: token is not defined
 
 2022-02-06	affa5e36-16e4-44d2-8932-86d967062913	GET	undefined	/refreshtoken
+2022-02-06	6747421a-cd02-4d31-8a9a-eb4464e82aa0	GET	undefined	/logout
+2022-02-06	cc115764-855a-4c54-9fe0-5c5ff1344d76	GET	undefined	/logout
