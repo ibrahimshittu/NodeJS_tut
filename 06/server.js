@@ -2,9 +2,11 @@ const express = require('express')
 const app = express()
 const path = require('path')
 const cors = require('cors')
+const cookieParser = require('cookie-parser')
 const corsOptions = require('./config/corsOptions')
 const {logger}  = require('./middleware/logEvents')
 const errorHandler  = require('./middleware/errorHandler')
+const verifyjwt  = require('./middleware/verifyjwt')
 
 app.use(logger)
 
@@ -18,15 +20,22 @@ app.use(express.urlencoded({ extended: false }));
 // built-in middleware for json 
 app.use(express.json());
 
+// middleware for cookie 
+app.use(cookieParser());
+
 //serve static files
 app.use(express.static(path.join(__dirname, '/public')));
 app.use('/subdir', express.static(path.join(__dirname, '/public')));
 
 app.use('/', require('./routes/root'))
 app.use('/subdir', require('./routes/subdir'))
-app.use('/employees', require('./routes/api/employees'))
+
 app.use('/register', require('./routes/api/register'))
 app.use('/auth', require('./routes/api/auth'))
+app.use('/refreshtoken', require('./routes/api/refresh'))
+
+app.use(verifyjwt)
+app.use('/employees', require('./routes/api/employees'))
 
 app.all('*', (req, res) => {
     res.status(404);

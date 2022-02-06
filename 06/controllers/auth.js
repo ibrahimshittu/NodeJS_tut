@@ -6,6 +6,8 @@ const usersDB = {
 const fsPromises = require('fs').promises
 const path = require('path')
 const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken')
+require('dotenv').config()
 
 const handleLogin = async (req, res) => {
     const {username, password } = req.body
@@ -19,7 +21,25 @@ const handleLogin = async (req, res) => {
     if (!findUser) return res.status(401).json({'message': "no user found"})
     const match = await bcrypt.compare(password, findUser.password)
     if (match) {
-        res.json({'message': `user ${findUser.username} loged in`})
+        const access_token =jwt.sign(
+            {"username": findUser.username},
+            process.env.ACCESS_TOKEN_SECRET,
+            {expiresIn: '3000s'}
+        )
+        const refresh_token =jwt.sign(
+            {"username": findUser.username},
+            process.env.REFRESH_TOKEN_SECRET,
+            {expiresIn: '1d'}
+        )
+
+        const otherUsers = usersDB.users.filter(person => person.username !== findUser.username)
+        const currentUser = {...findUser, refresh_token}
+        usersDB.setUsers([...otherUsers, currentUser])
+        await fsPromises.writeFile(path.join(__dirname, '..', 'model', 'users.json'),
+        JSON.stringify(usersDB.users))
+        res.cookie('jwt', refresh_token, {httpOnly: true, maxAge: 24*60*60*1000})
+        res.json({'message': `user ${findUser.username} loged in`,
+                'access': access_token})
     } else {
         res.sendStatus(401);
     }

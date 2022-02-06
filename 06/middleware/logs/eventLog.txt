@@ -46,3 +46,29 @@
 2022-02-05	63bfa999-419d-478f-99b2-77b7bfe9167f	POST	undefined	/auth
 2022-02-05	86257b09-b5d7-43f4-87ef-4c2cd039760f	POST	undefined	/auth
 2022-02-05	3106109f-6ae7-4780-9653-30ee2761d936	POST	undefined	/auth
+2022-02-06	216f4276-1212-4f59-9c4e-b3d75edb2341	POST	undefined	/auth
+2022-02-06	32e74838-0eed-49ff-a947-617c03760051	POST	undefined	/auth
+2022-02-06	3d796d45-ee18-41b9-a560-d3e2375abf26	POST	undefined	/auth
+2022-02-06	88b85a40-1c5d-4cf6-b493-91048d0de75b	POST	undefined	/auth
+2022-02-06	1d8cdaad-804e-4a74-8c3f-82f7acb952a6	POST	undefined	/auth
+2022-02-06	a89ad4c6-8268-4675-91d8-fe5b99bfa415	GET	undefined	/employees
+2022-02-06	f1b07f02-9a86-4738-b2f0-dfc7024426d4	GET	undefined	/employees
+2022-02-06	848546e7-1572-4662-a9b8-fee519c9261d	GET	undefined	/employees
+2022-02-06	6c2055d9-fe4d-4754-baa7-48d6dc888479	GET	undefined	/refresh
+2022-02-06	754c7cc8-a3cb-4f81-a0da-129d5c3a7f0d	GET	undefined	/refreshtoken
+2022-02-06	bc98988b-b2a5-48ba-95e8-1dc3e8e38d5a	ReferenceError: cookie is not defined
+
+2022-02-06	89e4c2dd-ba06-494f-831f-403ad250ccb6	POST	undefined	/auth
+2022-02-06	4af69282-554f-4e05-889f-21177cb20476	POST	undefined	/auth
+2022-02-06	8d1dfcc8-ab6b-4047-84b2-1fa20800ebf2	GET	undefined	/refresh
+2022-02-06	04cc4459-4cd3-48ac-bb24-6a812ad0620d	GET	undefined	/refresh
+2022-02-06	ae3a00a1-59b5-4731-850e-8105d88fe5e0	GET	undefined	/refreshtoken
+2022-02-06	f02c57cd-6ac7-48ed-b9a9-153ee380d870	ReferenceError: cookie is not defined
+
+2022-02-06	0363a474-1d13-46b8-857d-fa1a5465006f	GET	undefined	/refreshtoken
+2022-02-06	37e312be-cf42-4ef7-989a-8b912738d8f3	POST	undefined	/auth
+2022-02-06	d7f198ae-c7e8-4eab-9656-abdd1ff3b1ce	GET	undefined	/refreshtoken
+2022-02-06	3524fdf4-34c2-4bfb-a598-3417e6007e70	GET	undefined	/refreshtoken
+2022-02-06	24026606-3e07-4633-a3e3-b42f07e21051	ReferenceError: token is not defined
+
+2022-02-06	affa5e36-16e4-44d2-8932-86d967062913	GET	undefined	/refreshtoken
