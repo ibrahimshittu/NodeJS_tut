@@ -94,3 +94,26 @@
 2022-02-07	109b41e1-8fb4-43e2-8091-d29155dd90a2	POST	undefined	/auth
 2022-02-07	8a468844-adf7-488a-9775-128983107ec4	GET	undefined	/auth
 2022-02-07	033683be-e2fd-4e61-85ff-cc7622ade0c0	POST	undefined	/auth
+2022-02-07	2de1ac58-3894-4314-a989-d5e441a60f04	POST	undefined	/auth
+2022-02-07	8b6d9ad3-1d34-4499-8961-8bd96fb9d495	GET	undefined	/employee
+2022-02-07	ab4770cb-4955-4840-8887-59f117078458	GET	undefined	/employee
+2022-02-07	9e92bf0a-793b-4270-9bea-2207fe049b06	GET	undefined	/employee
+2022-02-07	267ec5dc-b967-422a-9c55-7f87d827bc78	GET	undefined	/employees
+2022-02-07	ea9e4258-3f0f-4b86-9be4-e6d3511d77f0	GET	undefined	/employees
+2022-02-07	c7b6c3f4-d1a8-49b7-9af0-d266635a85cb	GET	undefined	/employees
+2022-02-07	7d04bc42-a58c-465d-9bd2-7b68d07959a4	GET	undefined	/employees
+2022-02-07	4abc6b6c-2f9d-47df-9b21-cdabae618892	GET	undefined	/employees
+2022-02-07	e10fc074-7ffc-4d13-a36a-e22480b3ddcc	POST	undefined	/register
+2022-02-07	7d55159b-5990-4c47-8da3-5d0b5aa2a8b9	GET	undefined	/employees
+2022-02-07	145e4a10-cc30-466f-99f2-d4410d166364	GET	undefined	/employees
+2022-02-07	7ab4c5de-dbb0-49ff-9be7-0f834bf14f36	POST	undefined	/employees
+2022-02-07	000659fe-d524-49c8-a175-5f1d38dbdcbd	TypeError: res.sendStatuts is not a function
+
+2022-02-07	d8170f96-35fd-49c8-b1d6-95b8fd3d1d63	POST	undefined	/employees
+2022-02-07	3ff97590-73c5-48b9-9dbf-7c925a355e75	TypeError: res.sendStatuts is not a function
+
+2022-02-07	86df0cee-cb1a-414b-a086-acf1904209d1	POST	undefined	/employees
+2022-02-07	74e7052f-5378-4121-857c-c87038c02e57	POST	undefined	/auth
+2022-02-07	a669e903-fcf6-4771-ba3c-5bb11e0d34de	POST	undefined	/employees
+2022-02-07	87a3578a-2999-4e03-95c1-9e1efc75ecc5	POST	undefined	/employees
+2022-02-07	0269ec75-a267-416f-9ee1-578b62c84c94	POST	undefined	/employees
