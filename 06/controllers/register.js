@@ -15,7 +15,8 @@ const handleNewuser = async (req, res) => {
         const result = await User.create({"username": username,             
         "password" : hashedPwd})
         
-        res.status(201).json({'message': `user ${username} created\n ${result}`})
+        console.log(result)
+        res.status(201).json({'message': `user ${username} created`})
     } catch (error) {
         res.json({'message': error.message})
     }
