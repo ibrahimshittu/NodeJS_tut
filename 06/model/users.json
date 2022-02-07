@@ -1,14 +1,1 @@
-[
-    {   
-        "username":"ibrahim",
-        "roles": {
-            "Admin": 5150,
-            "Editor": 1984,
-            "User": 2001
-        },
-        "password":"$2b$10$CGclEWvdr4SqTXyTB/YX3ujpoxTj1mSlzQjzRPC9t9Ie85EEdFqSC",
-        "refresh_token":""
-    
-    }
-
-]
+[{"username":"ibrahim","roles":{"Admin":5150,"Editor":1984,"User":2001},"password":"$2b$10$CGclEWvdr4SqTXyTB/YX3ujpoxTj1mSlzQjzRPC9t9Ie85EEdFqSC","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImlicmFoaW0iLCJpYXQiOjE2NDQyMTg5NDksImV4cCI6MTY0NDMwNTM0OX0.Vt5YACGW6RZQobakVqXc8QjOdBI-Oz6LsP9OkLbxI_A"}]

@@ -74,3 +74,13 @@
 2022-02-06	affa5e36-16e4-44d2-8932-86d967062913	GET	undefined	/refreshtoken
 2022-02-06	6747421a-cd02-4d31-8a9a-eb4464e82aa0	GET	undefined	/logout
 2022-02-06	cc115764-855a-4c54-9fe0-5c5ff1344d76	GET	undefined	/logout
+2022-02-07	9445beb2-2219-4f5f-bfe2-f6f7fc6b5f1c	GET	undefined	/auth
+2022-02-07	c988446f-f8c9-4edd-9775-819181d2a252	GET	undefined	/auth
+2022-02-07	8ee32a1e-87c4-41f7-96bc-b863af66cf45	GET	undefined	/register
+2022-02-07	f5e435a9-92b4-4d15-95ec-a95d2f68ef60	GET	undefined	/register
+2022-02-07	ab4ed8da-f3be-4959-b45d-7b008218980b	GET	undefined	/register
+2022-02-07	efff6100-12b4-4137-86fa-9a55967ef868	POST	undefined	/auth
+2022-02-07	0302dded-0a75-4f49-bf99-a59abafecd5e	DELETE	undefined	/employees
+2022-02-07	4c03f266-736c-46dd-952f-51f2590cd118	ReferenceError: role is not defined
+
+2022-02-07	b69a8481-fa7a-47e3-89de-ded866c1de41	DELETE	undefined	/employees
