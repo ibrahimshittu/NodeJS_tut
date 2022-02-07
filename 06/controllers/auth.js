@@ -25,10 +25,10 @@ const handleLogin = async (req, res) => {
             {expiresIn: '1d'}
         )
 
-        findUser.refreshToken = refreshToken
+        findUser.refreshToken = refresh_token
         const result = await findUser.save()
         console.log(result)
-        
+
         res.cookie('jwt', refresh_token, {httpOnly: true, sameSite: 'None', secure: true, maxAge: 24*60*60*1000})
         res.json({'message': `user ${findUser.username} loged in`,
                 'access': access_token})
