@@ -84,3 +84,7 @@
 2022-02-07	4c03f266-736c-46dd-952f-51f2590cd118	ReferenceError: role is not defined
 
 2022-02-07	b69a8481-fa7a-47e3-89de-ded866c1de41	DELETE	undefined	/employees
+2022-02-07	2aab1016-9b54-4a7d-bf88-576734b3bc73	POST	undefined	/register
+2022-02-07	45c2cd24-f2a3-4660-89f0-7375226fd144	POST	undefined	/register
+2022-02-07	b375db77-40d1-4f4c-bce4-e83cecdcbe3a	POST	undefined	/register
+2022-02-07	8fea9b46-5db6-4da5-bfa6-b3c86cc0677c	POST	undefined	/register
