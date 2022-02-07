@@ -20,9 +20,10 @@ const handleLogin = async (req, res) => {
 
     if (!findUser) return res.status(401).json({'message': "no user found"})
     const match = await bcrypt.compare(password, findUser.password)
+    const roles= Object.values(findUser.roles)
     if (match) {
         const access_token =jwt.sign(
-            {"username": findUser.username},
+            {"userInfo": {"username": findUser.username, "roles": roles}},
             process.env.ACCESS_TOKEN_SECRET,
             {expiresIn: '3000s'}
         )

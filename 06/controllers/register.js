@@ -19,7 +19,11 @@ const handleNewuser = async (req, res) => {
     if (duplicate) return res.status(409).json({'message': 'user already exists'})
     try {
         const hashedPwd = await bcrypt.hash(password, 10)
-        const newUser = {"username": username, "password" : hashedPwd}
+        const newUser = {"username": username, 
+        "roles": {
+            "User": 2001
+        },             
+        "password" : hashedPwd}
         
         usersDB.setUsers([...usersDB.users, newUser])
 
