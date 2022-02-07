@@ -1,10 +1,4 @@
-const usersDB = {
-    users: require('../model/users.json'),
-    setUsers: function (data) { this.users = data}
-}
-
-const fsPromises = require('fs').promises
-const path = require('path')
+const User = require('../model/User') 
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 require('dotenv').config()
@@ -14,9 +8,7 @@ const handleLogin = async (req, res) => {
     if (!username || !password) return res.status(400).json({'message': ' User or Password required'})
 
     // find duplicates
-    const findUser = usersDB.users.find(person => 
-        person.username === username
-    )
+    const findUser = await User.findOne({username: username}).exec()
 
     if (!findUser) return res.status(401).json({'message': "no user found"})
     const match = await bcrypt.compare(password, findUser.password)
@@ -33,11 +25,10 @@ const handleLogin = async (req, res) => {
             {expiresIn: '1d'}
         )
 
-        const otherUsers = usersDB.users.filter(person => person.username !== findUser.username)
-        const currentUser = {...findUser, refresh_token}
-        usersDB.setUsers([...otherUsers, currentUser])
-        await fsPromises.writeFile(path.join(__dirname, '..', 'model', 'users.json'),
-        JSON.stringify(usersDB.users))
+        findUser.refreshToken = refreshToken
+        const result = await findUser.save()
+        console.log(result)
+        
         res.cookie('jwt', refresh_token, {httpOnly: true, sameSite: 'None', secure: true, maxAge: 24*60*60*1000})
         res.json({'message': `user ${findUser.username} loged in`,
                 'access': access_token})
